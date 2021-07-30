@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { IFrame } from './iframe'
+import IFrame from './iframe'
 import { useState } from 'react'
 
 export default function Home() {

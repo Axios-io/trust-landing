@@ -1,4 +1,4 @@
-export const IFrame = ({ closeModal }) => {
+const IFrame = ({ closeModal }) => {
 	return (
 		<div id='modal-wrapper'>
 			<p onClick={closeModal}>
@@ -25,3 +25,5 @@ export const IFrame = ({ closeModal }) => {
 		</div>
 	)
 }
+
+export default IFrame
