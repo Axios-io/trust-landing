@@ -52,7 +52,7 @@ export default function Home() {
 								className='md:-translate-x-4 md:translate-y-4 rounded-lg blur-sm grayscale hover:blur-none hover:grayscale-0 transition duration-300'
 							/>
 
-							<svg
+							{/* <svg
 								onClick={openModal}
 								xmlns='http://www.w3.org/2000/svg'
 								className='player-btn'
@@ -63,7 +63,7 @@ export default function Home() {
 									d='M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z'
 									clipRule='evenodd'
 								/>
-							</svg>
+							</svg> */}
 						</div>
 					</div>
 				</div>
@@ -192,7 +192,7 @@ export default function Home() {
 			<footer className='flex items-center justify-center w-full h-24 border-t'>
 				<a
 					className='flex items-center justify-center text-gray-600'
-					href='https://github.com/mjtbkh'
+					href='#'
 					target='_blank'
 					rel='noopener noreferrer'>
 					توسعه یافته با{' '}
