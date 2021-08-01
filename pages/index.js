@@ -13,8 +13,14 @@ export default function Home() {
 		document.querySelector('main').style = 'filter: none'
 	}
 	const makeLink = () => {
-		const a = document.createElement('a')
+		let a = document.createElement('a')
 		a.href = '#section-1'
+		a.click()
+	}
+	const gotoStore = () => {
+		let a = document.createElement('a')
+		a.href = 'https://www.zhaket.com/web/trust-wordpress-plugin'
+		a.target = '_blank'
 		a.click()
 	}
 	return (
@@ -40,8 +46,10 @@ export default function Home() {
 						className='mt-6 text-2xl flex flex-col-reverse gap-8 md:grid md:grid-cols-2 items-center'
 						id='intro'>
 						<div className='w-1/3 mx-auto justify-center flex flex-col gap-4 md:flex-row md:w-full'>
-							<button className='primary'>خرید از ژاکت</button>
-							<button className='secondary' onClick={makeLink}>
+							<button className='primary' onClick={gotoStore}>
+								خرید از ژاکت
+							</button>
+							<button className='secondary animate-bounce' onClick={makeLink}>
 								بیشتر بدانید!
 							</button>
 						</div>
@@ -179,7 +187,9 @@ export default function Home() {
 					<img src='/wp-warranty-check-4.png' alt='' />
 				</div>
 
-				<button className='bg-blue-500 hover:bg-indigo-700 transition duration-100 text-white md:w-1/2 mx-auto py-8 cursor-pointer my-12'>
+				<button
+					onClick={gotoStore}
+					className='animate-bounce bg-blue-500 hover:bg-indigo-700 transition duration-100 text-white md:w-1/2 mx-auto py-8 cursor-pointer my-12'>
 					خرید افزونه استعلام گارانتی وردپرس Trust
 				</button>
 				<img
