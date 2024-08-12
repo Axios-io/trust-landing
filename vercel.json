@@ -1,0 +1,17 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "ALLOW-FROM https://zhaket.com"
+        },
+        {
+            "key": "Content-Security-Policy",
+            "value": "frame-ancestors https://*.zhaket.com https://zhaket.com",
+        },
+      ]
+    }
+  ]
+}
